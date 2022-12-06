@@ -1,0 +1,5 @@
+class BdNota:
+    @staticmethod
+    def add_nota(notas):
+        with open("bd_nota.txt", "a") as arquivo:
+            arquivo.write(f"Primeira nota: {notas.nota1}, Segunda Nota: {notas.nota2}\n")
